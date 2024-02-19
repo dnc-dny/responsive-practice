@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  text-align: center;
+  width: 1100px;
+}
+
+.size-box{
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  display: inline-block;
+}
+
+.color-box{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  display: inline-block;
+}
+
+.margin-box1{
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background: #0008ff;
+  margin-right: 150px;
+}
+
+.margin-box2{
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background: #22ff00;
+}
+
+.float-box1{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  float: left;
+}
+
+.float-box2{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+  float: left;
+}
+
+.float-center{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.flexbox1-box1{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+}
+
+.flexbox1-box2{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+}
+
+.flexbox1-box3{
+  width: 300px;
+  height: 300px;
+  background: #ff8400;
+}
+
+.center p{
+  text-align: center;
+  line-height: 300px;
+}
+
+.flexbox2-box1{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+}
+
+.flexbox2-box2{
+  width: 300px;
+  height: 300px;
+  background: #d4ff00;
+}
+
+.flexbox2-box3{
+  width: 300px;
+  height: 300px;
+  background: #ff00e1;
+}
+
+.hidden-box1{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+}
+
+.hidden-box2{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+  display: none;
+}
+
+.hidden-box3{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+}
+
+
+@media screen and (max-width: 960px){
+.size-box{
+  width: 200px;
+  height: 200px;
+}
+
+.color-box{
+  background: #007bff;
+}
+
+.margin-box1{
+  margin-right: 50px;
+}
+
+.float-box1,.float-box2{
+  float: none;
+}
+
+.flexbox1-box{
+  flex-direction: row-reverse;
+}
+
+.flexbox2-box1{
+  order: 1;
+}
+
+.flexbox2-box2{
+  order: 2;
+}
+
+.hidden-box1{
+  display: none;
+}
+
+.hidden-box2{
+  display: block;
+}
+
+}
