@@ -179,6 +179,10 @@ body{
   order: 2;
 }
 
+.flexbox2-box3{
+  order: 0;
+}
+
 .hidden-box1{
   display: none;
 }
